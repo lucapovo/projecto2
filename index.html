@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+    <head>
+        <title>La Serietúlia</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="css/general.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
+        <script async src="js/app.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo/LaSerietulia-h.png" alt="Logo LaSerietúlia">
+            <section class="cabecera">
+                <div>
+                    <img class="fotoPrincipal" src="img/victoria-kubiaki-yeFJNtA3604-unsplash 1.jpg" alt="Foto principal">
+                </div>
+                <div class="cabeceraTexto">
+                    <h1>Maníacs de les sèries? <span>Teniu una cita ineludible.</span></h1>
+                        <p class="cabeceraDescripcion">Els pròxims 22 i 23 de novembre tens una cita que no pots deixar perdre. Passa't a compartir la teva passió pel setè art "de sofà" amb uns convidats excepcionals.</p>
+                        <form class="form1" name="publi" method="post" enctype="application/x-www-form-urlencoded" action="envio.php">
+                            <fieldset>
+                                <ul>
+                                    <li>
+                                        <input class="input1" name="email" type="email" required pattern="^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;">
+                                    </li>
+                                    <li>
+                                        <input id="politicas" name="politicas" type="checkbox" required>
+                                        <label for="politicas">He llegit i accepto la <a href="#">política de privacitat</a></label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <button class="botonUno" type="submit">Alta Newsletter</button>
+                        </form>
+                </div>
+            </section>
+            <section>
+                <h2>Activitats dins del festival</h2>
+                    <div class="activitats">
+                        <article>
+                            <img src="img/icons/taza.svg" alt="Taza">
+                                <h4>Taules rodones</h4>
+                        </article>
+                        <article>
+                            <img src="img/icons/projector.svg" alt="Projector">
+                                <h4>Projecció de sèries</h4>
+                        </article>
+                        <article>
+                            <img src="img/icons/debats.svg" alt="Debats">
+                                <h4>Debats amb els convidats</h4>
+                        </article>
+                        <article>
+                            <img src="img/icons/idcard.svg" alt="idCard">
+                                <h4>Serietúlia Pro</h4>
+                        </article>
+                    </div>
+            </section>
+        </header>
+        <main>
+            <section>
+                <div class="intro">
+                    <h2>Convidats de luxe</h2>
+                        <p class="p-margin">Actors, actrius i guionistes convidats a les xerrades i debats en el visionament de capítols emblemàtics que es durà a terme a la Filmoteca.</p>
+                </div>
+                <div id="cards"></div>
+            </section>
+            <section class="s-cartelera">
+                <h2>Les millors sèries</h2>
+                    <p class="p-margin">Troba les sèries que projectarem al festival a la teva plataforma.</p>
+                    <nav>
+                        <ul class="menu-series">
+                            <li>
+                                <a id="filtro-todo">Totes</a>
+                            </li>
+                            <li>
+                                <a id="filtro-hbo">HBO Max</a>
+                            </li>
+                            <li>
+                                <a id="filtro-netflix">Netflix</a>
+                            </li>
+                            <li>
+                                <a id="filtro-filmin">Filmin</a>
+                            </li>
+                            <li>
+                                <a id="filtro-prime">Prime</a>
+                            </li>
+                            <li>
+                                <a id="filtro-disney">Disney+</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="cartelera">
+                        <picture class="serie" title="prime">
+                            <source srcset="img/series/the-office@1x.jpg, img/series/the-office@2x.jpg 2x, img/series/the-office@3x.jpg 3x">
+                                <img src="img/series/the-office@3x.jpg" alt="The Office">
+                        </picture>
+                        <picture class="serie" title="netflix">
+                            <source srcset="img/series/luther@1x.jpg, img/series/luther@2x.jpg 2x, img/series/luther@3x.jpg 3x">
+                                <img src="img/series/luther@3x.jpg" alt="Luther">
+                        </picture>
+                        <picture class="serie" title="hbo">
+                            <source srcset="img/series/killing-eve@1x.jpg, img/series/killing-eve@2x.jpg 2x, img/series/killing-eve@3x.jpg 3x">
+                                <img src="img/series/killing-eve@3x.jpg" alt="Killing Eve">
+                        </picture>
+                        <picture class="serie" title="filmin">
+                            <source srcset="img/series/halt-catch@1x.jpg, img/series/halt-catch@2x.jpg 2x, img/series/halt-catch@3x.jpg 3x">
+                                <img src="img/series/halt-catch@3x.jpg" alt="Halt and Catch Fire">
+                        </picture>
+                        <picture class="serie" title="hbo">
+                            <source srcset="img/series/girls@1x.jpg, img/series/girls@2x.jpg 2x, img/series/girls@3x.jpg 3x">
+                                <img src="img/series/girls@3x.jpg" alt="Girls">
+                        </picture>
+                        <picture class="serie" title="prime">
+                            <source srcset="img/series/fleabag@1x.jpg, img/series/fleabag@2x.jpg 2x, img/series/fleabag@3x.jpg 3x">
+                                <img src="img/series/fleabag@3x.jpg" alt="Fleabag">
+                        </picture>
+                        <picture class="serie" title="filmin">
+                            <source srcset="img/series/firefly@1x.jpg, img/series/firefly@2x.jpg 2x, img/series/firefly@3x.jpg 3x">
+                                <img src="img/series/firefly@3x.jpg" alt="Firefly">
+                        </picture>
+                        <picture class="serie" title="disney">
+                            <source srcset="img/series/castle@1x.jpg, img/series/castle@2x.jpg 2x, img/series/castle@3x.jpg 3x">
+                                <img src="img/series/castle@3x.jpg" alt="Castle">
+                        </picture>
+                    </div>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <h2>Vols rebre informació?</h2>
+                    <form class="form2" name="publi" method="post" enctype="application/x-www-form-urlencoded" action="envio.php">
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <input class="input2" name="email" type="email" required pattern="^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;">
+                                </li>
+                                <li>
+                                    <input id="politicas2" name="politicas" type="checkbox" required>
+                                    <label for="politicas2">He llegit i accepto la <a href="#">política de privacitat</a></label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="botonDos" type="submit">Alta Newsletter</button>
+                    </form>
+            </section>
+            <section>
+                <h2>Espais i dades</h2>
+                    <div class="mapa">
+                        <img src="img/mapa.png" alt="Mapa">
+                        <div class="direcciones">
+                            <h3>22 i 23 de novembre</h3>
+                                <h4 class="m-left">Filmoteca de Catalunya</h4>
+                                    <p class="m-left">Plaça Salvador Seguí, 1 - 9 08001 Barcelona</p>
+                                <h4 class="m-left">Restaurant «La Monroe»</h4>
+                                    <p class="m-left">Plaça Salvador Seguí 08001 Barcelona</p>
+                        </div>
+                    </div>
+            </section>
+        </aside>
+        <footer>
+            <h2>Patrocinadors i col·laboradors</h2>
+                <div class="patrocinadores">
+                    <div class="subrayado"></div>
+                </div>
+                <div class="patro-logos1">
+                    <img src="img/sponsor/Logo-Damm-web 1.png" alt="Estrella Damm">
+                    <img src="img/sponsor/vichy.png" alt="Vichy Catalán">
+                </div>
+                <div class="patro-logos2">
+                    <img src="img/sponsor/HBOn_alpha_footer-e1530626307174 1.png" alt="HBO ESpaña">
+                    <img src="img/sponsor/Netflix_Logo_footer-500x210 1.png" alt="Netflix">
+                    <img src="img/sponsor/RTVE_footer-500x258 1.png" alt="RTVE">
+                    <img src="img/sponsor/Logo_iCatFm-500x186 1.png" alt="iCat fm">
+                    <img src="img/sponsor/Time-Out_2-500x182.png" alt="TimeOut Barcelona">
+                </div>
+                <div class="patro-logos3">
+                    <img src="img/sponsor/bn_ajuntament.png" alt="Ajuntament de Barcelona">
+                    <img src="img/sponsor/Logotip_beteve_roig-1-500x136 1.png" alt="betevé">
+                    <img src="img/sponsor/CFF_Logo-Negre-RGB-500x115 1.png" alt="Catalunya Film Festivals">
+                    <img src="img/sponsor/escac_claim_white 1.png" alt="ESCAC">
+                    <img src="img/sponsor/cccb.png" alt="CCCB">
+                </div>
+                <div class="media-logos">
+                    <img src="img/sponsor/HBOn_alpha_footer-e1530626307174 1.png" alt="HBO ESpaña">
+                    <img src="img/sponsor/Netflix_Logo_footer-500x210 1.png" alt="Netflix">
+                    <img src="img/sponsor/RTVE_footer-500x258 1.png" alt="RTVE">
+                    <img src="img/sponsor/Logo_iCatFm-500x186 1.png" alt="iCat fm">
+                    <img src="img/sponsor/Time-Out_2-500x182.png" alt="TimeOut Barcelona">
+                    <img src="img/sponsor/bn_ajuntament.png" alt="Ajuntament de Barcelona">
+                    <img src="img/sponsor/Logotip_beteve_roig-1-500x136 1.png" alt="betevé">
+                    <img src="img/sponsor/CFF_Logo-Negre-RGB-500x115 1.png" alt="Catalunya Film Festivals">
+                    <img src="img/sponsor/escac_claim_white 1.png" alt="ESCAC">
+                    <img src="img/sponsor/cccb.png" alt="CCCB">
+                </div>
+            </footer>
+        <script src="js/filtro_series.js"></script>
+        <script src="js/envio.js"></script>
+        <script src="js/pase.js"></script>
+    </body>
+</html>
